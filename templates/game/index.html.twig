@@ -1,14 +1,11 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello GameController!{% endblock %}
+{% block title %}World Builder
+{% endblock %}
 
 {% block body %}
-        <div class="cube">
-            <div class="left">L</div>
-            <div class="right">R</div>
-            <div class="back">Ba</div>
-            <div class="front">F</div>
-            <div class="top">T</div>
-            <div class="bottom">Bo</div>
-        </div>
+	<h1>World Builder - Minecraft like</h1>
+    <main>
+		<twig:Map></twig:Map>
+	</main>
 {% endblock %}

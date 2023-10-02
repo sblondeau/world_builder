@@ -1,0 +1,8 @@
+<div{{attributes}} class="cube {{ type}} " style="--x:{{x}}; --y:{{y}}; --z:{{z}}">
+	<div class="left {{ x == 1 ? 'disabled' }}" data-action="click->live#emit" data-event="interact(key={{ key }}, face=left)"></div>
+	<div class="right" data-action="click->live#emit" data-event="interact(key={{ key }}, face=right)"></div>
+	<div class="back {{ y == 1 ? 'disabled' }}" data-action="click->live#emit" data-event="interact(key={{ key }}, face=back)"></div>
+	<div class="front" data-action="click->live#emit" data-event="interact(key={{ key }}, face=front)"></div>
+	<div class="top" data-action="click->live#emit" data-event="interact(key={{ key }}, face=top)"></div>
+	<div class="bottom {{ z == 1 ? 'disabled' }}" data-action="click->live#emit" data-event="interact(key={{ key }}, face=bottom)"></div>
+</div>
